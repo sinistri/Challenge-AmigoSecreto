@@ -55,6 +55,6 @@ function sortearAmigo(){
 
 function reiniciarJuego() {
     amigo = []; //  Vacía la lista de amigos
-    document.getElementById("listaAmigos").innerHTML = ""; //  Borra la lista en la página
+    document.getElementById("listaAmigos").innerHTML = ""; //  Borra la lista en la página.
     document.getElementById("resultado").innerHTML = ""; //  Borra el resultado del sorteo
 }
