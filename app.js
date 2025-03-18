@@ -12,6 +12,11 @@ function agregarAmigo() {
         return;
     }
 
+    if (amigo.includes(nombreAmigo)) { //  Evita agregar nombres duplicados
+        alert("Este nombre ya ha sido agregado");
+        return;
+    }
+
     amigo.push(nombreAmigo);
     inputAmigo.value="";
     inputAmigo.focus();
@@ -38,6 +43,8 @@ function sortearAmigo(){
         alert("No hay amigos para sortear");
         return;
     }
+   
+   
     let amigoSorteado =amigo[Math.floor(Math.random() * amigo.length)];
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `El amigo sorteado es: ${amigoSorteado}`;
